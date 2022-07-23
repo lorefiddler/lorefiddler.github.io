@@ -8,29 +8,87 @@
   </head>
   <body>
 
-    <div class='form-container'>
+    <div class='page'>
 
-      <form
-        action="https://formspree.io/f/xnqweony"
-        method="POST" class='input-form'
-
-        <div class='form-row'>
-          <label>
-            Your email:
-            <input type="email" name="email">
-          </label>
+      <div class='section header-container'>
+        <div class='header'>
+          <div class='photo'>
+              <picture>
+                <img src='lor-images/IMG_head.jpeg'/>
+              </picture>
+            </div>
+          </div>
         </div>
 
-        <div class='form-row'>
-          <label>
-            Your message:
-            <textarea name="message"></textarea>
-          </label>
+        <div class='section menu-container'>
+          <h1>Lore Smith</h1>
+          <ul class='menu'>
+            <li class='menu-button'><a href='index.html'>Home</a></li>
+            <li class='menu-button'><a href='contact.html'>Portfolio Links</a></li>
+            <li class='menu-button'><a href='lor-form.html'>Contact</a></li>
+          </ul>
         </div>
-        <!-- your other form fields go here -->
-        <button type="submit">Send</button>
-      </form>
 
+        <div class='section form-container'>
+          <div class='form'>
+            <form
+              action="https://formspree.io/f/xnqweony"
+              method="POST" class='input-form'>
+
+              <div class='form-row'>
+                <h3>Let's stay in touch!</h3>
+              </div>
+
+              <div class='form-row'>
+                <label>Your name:</label>
+                <input type="name" name="name">
+              </div>
+
+              <div class='form-row'>
+                <label>Your email:</label>
+                <input type="email" name="email">
+              </div>
+
+              <div class='form-row'>
+                <label>Comments:</label>
+                <textarea name="message"></textarea>
+              </div>
+
+              <div class='form-row'>
+                <button type="submit">Send</button>
+              </div>
+            </form>
+          </div>
+        </div
+
+        footer>
+          <div class='section footer-container'>
+
+            <a class='credit'>Website development by Lore Smith</a>
+
+            <ul class='footer-links'>
+
+              <a target="_blank" class='social' href="https://www.linkedin.com/in/lore-smith-03330a55/">
+               <img src="lor-icons/linkedin_icon.svg">
+              </a>
+
+              <a target="_blank" class='social' href="https://twitter.com/lorefiddler">
+               <img src="lor-icons/twitter_icon.svg">
+              </a>
+
+              <a target="_blank" class='social' href="https://www.kaggle.com/loresmith">
+               <img src="lor-icons/kaggle_icon.svg">
+              </a>
+
+              <a target="_blank" class='social' href="https://github.com/lorefiddler">
+               <img src="lor-icons/github_icon.svg">
+              </a>
+
+            </ul>
+          </div>
+        </footer>
+
+      </div>
     </div>
 
   </body>
