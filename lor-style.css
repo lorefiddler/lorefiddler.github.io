@@ -147,33 +147,16 @@ p {
 
 .menu {
   /* border: 1px solid #fff;  /* For debugging */
-  margin-top: 0;
   display: flex;
   justify-content: space-between;
+  min-width: 330px;
 }
 
 /* puts li's in a horizontal line, adjusts margins */
 .menu > li {
   display: inline;
-  margin: 30px 0 0 20px;
+  margin-top: 30px;
 }
-
-.menu-button {
-  color: #faac7b;
-  display: flex;
-  justify-content: flex-end;
-}
-
-/* .menu > a:link,
-a:visited {
-  color: #BBCADA;
-  text-decoration: none;
-  weight: 500;
-}
-.menu > a:hover {
-  color: #668890;
-  text-decoration: underline;
-} */
 
 /* content section */
 .content-container {
@@ -345,15 +328,38 @@ ol > li {
   margin-top: 10px;
 }
 
-@media only screen and (min-width: 10px) and (max-width: 450px) {
 
-  .footer-container {
-    background-color: #acacac;
+@media only screen and (max-width: 640px) {
+  /* .footer-container {
+    background-color: #aaa;
+  } for testing */
+
+  .menu-container {
+    flex-direction: column;
+  }
+
+  .menu {
+    /* border: 1px solid #fff;  /* For debugging */
+    display: flex;
+    justify-content: space-between;
+    min-width: 250px;
+    border-top: 1px solid #111;
+  }
+
+  .menu > li {
+    margin-top: 7px;
   }
 
 }
 
 
+
+@media only screen and (max-width: 640px) {
+  .footer-container {
+    background-color: #aaa;
+  }  /* for testing */
+
+}
 
 /* text size for links */
   /* a:link,
