@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset='UTF-8'/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lore Smith</title>
     <link rel="shortcut icon" href="lor-icons/favicon.ico" type="image/x-icon">
     <link rel='stylesheet' href='lor-style.css'/>
@@ -20,15 +21,30 @@
           </div>
         </div>
 
-        <div class='section menu-container'>
-          <h1>Lore Smith</h1>
+        <div class='section topnav' id="myTopnav">
+          <a href="#home" class="logo">Lore Smith</a>
           <ul class='menu'>
             <li class='menu-button'><a href='index.html'>Home</a></li>
             <li class='menu-button'><a href='case1.html'>Case Study</a></li>
             <li class='menu-button'><a href='links.html'>Links</a></li>
             <li class='menu-button'><a href='lor-form.html'>Contact</a></li>
           </ul>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
         </div>
+
+        <script>
+          /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+          function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+              x.className += " responsive";
+            } else {
+              x.className = "topnav";
+            }
+          }
+        </script>
 
         <div class='section content-container'>
           <div class='content'>
