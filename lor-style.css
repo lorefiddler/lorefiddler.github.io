@@ -105,18 +105,7 @@ p {
   margin-bottom: 20px;
 }
 
-/* header section */
-.header-container {
-  background-color: #444;
-  display: flex;
-  justify-content: center;
-}
-
-.header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
+/* images */
 
 .photo img {
   width: 100%;
@@ -130,10 +119,30 @@ p {
   margin: 28px 10px 25px 0;
 }
 
-.cert img{
+.cert img {
   width: 100%;
   display: block;
   margin: 30px 0 12px 0;
+}
+
+.headshot {
+  float: right;
+  width: 20%;
+  margin-top: 20px;
+  border-radius: 4px;
+}
+
+/* header section */
+.header-container {
+  background-color: #444;
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 /* menu section */
@@ -159,15 +168,22 @@ p {
   margin-top: 30px;
 }
 
-/* content section */
-.content-container {
-  color: #231a39;
+/* use for content where you want text to flow around images */
+.flow-container {
   background-color: #eee;
   padding: 0 20px 0 20px;
-  display: flex;
-  justify-content: left;
 }
 
+/* content section */
+.content-container {
+  background-color: #eee;
+  padding: 0 20px 0 20px;
+  /* display: flex;
+  justify-content: left;
+  overflow: auto; */
+}
+
+/* for content without flow */
 .content {
   /* border: 1px solid #fff;  For debugging */
   display: flex;
@@ -346,9 +362,18 @@ ol > li {
   .menu > li {
     margin-top: 7px;
   }
+
+  .headshot {
+    width: 25%;
+  }
+
 }
 
 @media only screen and (max-width: 450px) {
+
+  .headshot {
+    width: 30%;
+  }
 
   .footer-container {
     display: flex;
