@@ -201,7 +201,6 @@ p {
   background-color: #EEE;
   padding: 0 0 20px 0;
   display: flex;
-  justify-content: center;
   flex-direction: column;
 }
 
@@ -209,13 +208,13 @@ p {
   /* border: 1px solid #fff;  /* For debugging */
 }
 
+/* styles most form elements */
 .form-row {
-  margin-bottom: 40px;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
   flex-wrap: wrap;
-  margin: 0 20px 0 20px;
+  margin: 0 20px 40px 20px;
 }
 
 /* styles input boxes */
